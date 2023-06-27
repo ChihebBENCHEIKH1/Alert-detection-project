@@ -13,21 +13,26 @@ The Alert Detection Platform is a microservices-based architecture developed usi
 ## Installation
 #### Clone the repository:
   ```shell
-  git clone https://github.com/ChihebBENCHEIKH1/alert-project-v1.git
+  git clone https://github.com/ChihebBENCHEIKH1/Alert-detection-project.git
    ```
 #### Navigate to the project root directory:
   ```shell
-  cd alert-project-v1
+  cd Alert-detection-project
    ```
 #### Install dependencies for frontend services:
   ```shell
   cd frontend
   npm install
    ```
-#### Install dependencies for backend services:
+#### Install dependencies for backend services (Java):
   ```shell
   cd ../backend
   mvn clean install
+   ```
+#### Install dependencies for backend services (Node):
+  ```shell
+  cd ../backend
+  npm install
    ```
 # Configuration
 The configuration files for each microservice are located in their respective directories. You can customize the configurations as per your requirements. Common configuration options include database connections, API endpoints, and authentication settings.
@@ -38,16 +43,28 @@ The configuration files for each microservice are located in their respective di
 cd frontend
 npm start
  ```
-#### Start the backend services:
+#### Start the backend services(Java):
+```shell
+cd ../backend
+java -jar service-name.jar
+ ```
+Replace service-name.jar with the name of each microservice's JAR file.
+#### Start the backend services(Java):
 ```shell
 cd ../backend
 java -jar service-name.jar
  ```
 Replace service-name.jar with the name of each microservice's JAR file.
 
+#### Start the backend services(Node):
+```shell
+cd ../backend
+npm start
+ ```
+
 #### Access the platform in your web browser:
 ```shell
-http://localhost:3000
+http://localhost:4200
  ```
 # Contributing
 
